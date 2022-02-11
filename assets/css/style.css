@@ -51,5 +51,25 @@ a{
     color: var(--white-);
 }
 
+img{
+    width: 150px;
+}
+
+button{
+    width: 70%;
+    height: 50px;
+    border: none;
+    border-radius: 24px;
+
+    background-image: linear-gradient(to right, var(--cyan-), var(--blue-));
+
+    font-weight: 700;
+    color: var(--white-);
+}
+
+@media (max-width: 426px){
+    
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

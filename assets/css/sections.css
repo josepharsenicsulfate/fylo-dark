@@ -1,8 +1,51 @@
+section{
+    padding: 35px 30px;
+    text-align: center;
+}
+
 section.intro, section.form-card{
     background-color: var(--dark-blue-intro-email-);
 }
 
 section.features, section.fill-content, section.testimonial{
     background-color: var(--dark-blue-main-bg-);
+}
+
+section.intro img{
+    width: 100%;
+    object-position: center;
+}
+
+section.intro h1{
+    padding: 25px 0;
+    font-size: 24px;
+}
+
+section.intro button{
+    margin: 25px 0;
+}
+
+section.features{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 100px;
+}
+
+section.features img{
+    width: 75px;
+}
+
+section.features h2{
+    margin: 15px 0;
+}
+
+@media (min-width: 769px){
+    section{
+        padding: 70px 60px;
+    }
+
+    section.intro img{
+        width: 50%;
+    }
 }
 
