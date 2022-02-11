@@ -1,0 +1,8 @@
+section.intro, section.form-card{
+    background-color: var(--dark-blue-intro-email-);
+}
+
+section.features, section.fill-content, section.testimonial{
+    background-color: var(--dark-blue-main-bg-);
+}
+
