@@ -19,7 +19,7 @@ header nav ul{
     flex-flow: row wrap;
 
     align-self: center;
-    gap: 25px;
+    gap: 10px;
 }
 
 header nav ul li{
@@ -30,11 +30,13 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 
-@media (min-width: 426px){
-    
+@media (min-width: 375px){
+    header nav ul{
+        gap: 25px;
+    }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
     header{
         padding: 50px;
     }
