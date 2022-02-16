@@ -4,8 +4,8 @@
 :root{
     --dark-blue-intro-email-: hsl(217, 28%, 15%);
     --dark-blue-main-bg-: hsl(218, 28%, 13%);
-    --dark-blue-footer: hsl(216, 53%, 9%);
-    --dark-blue-card: hsl(219, 30%, 18%);
+    --dark-blue-footer-: hsl(216, 53%, 9%);
+    --dark-blue-card-: hsl(219, 30%, 18%);
 
     --cyan-: hsl(176, 68%, 64%);
     --blue-: hsl(198, 60%, 50%);

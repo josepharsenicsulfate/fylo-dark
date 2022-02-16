@@ -39,6 +39,61 @@ section.features h2{
     margin: 15px 0;
 }
 
+section.fill-content{
+    display: grid;
+    grid-template-columns: 100%;
+
+    text-align: start;
+}
+
+section.fill-content div > *{
+    margin: 20px 0;
+}
+
+section.fill-content img{
+    width: 100%;
+}
+
+section.fill-content div a{
+    color: var(--cyan-);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cyan-);
+}
+
+section.fill-content div a img{
+    height: 1em;
+    width: auto;
+
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+section.testimonial img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+section.testimonial .card{
+    text-align: start;
+
+    background-color: var(--dark-blue-card-);
+    border-radius: 5px;
+
+    padding: 25px;
+    margin: 25px 0;
+
+    line-height: 25px;
+}
+
+section.testimonial .card h4{
+    font-weight: 100;
+}
+
+section.testimonial .card :not(p){
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
 @media (min-width: 768px){
     section.intro{
         padding: 35px 25%;
@@ -56,6 +111,18 @@ section.features h2{
 
     section.features > * {
         padding: 25px;
+    }
+
+    section.fill-content{
+        grid-template-columns: 50% 50%;
+    }
+
+    section.fill-content div{
+        margin: auto 0;
+    }
+
+    section.fill-content img{
+        width: 100%;
     }
 }
 
