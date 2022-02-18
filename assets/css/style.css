@@ -29,6 +29,8 @@ body{
     font-family: 'Open Sans', 'sans serif';
     font-size: 14px;
 
+    background-color: var(--dark-blue-main-bg-);
+
     color: var(--white-);
 }
 
@@ -65,6 +67,16 @@ button{
 
     font-weight: 700;
     color: var(--white-);
+}
+
+#curve{
+    width: 100%;
+    position: relative;
+    display: block;
+
+    margin: 0;
+
+    background-color: var(--dark-blue-intro-email-);
 }
 
 .attribution { font-size: 11px; text-align: center; }

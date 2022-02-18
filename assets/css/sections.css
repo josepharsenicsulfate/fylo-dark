@@ -68,9 +68,18 @@ section.fill-content div a img{
     margin-left: 5px;
 }
 
-section.testimonial img{
-    width: 50px;
-    border-radius: 50%;
+section.testimonial{
+    display: grid;
+    gap: 24px;
+
+    padding-bottom: 250px;
+}
+
+section.testimonial #quote{
+    width: 25px;
+    position: relative;
+    left: 5px;
+    bottom: -24px;
 }
 
 section.testimonial .card{
@@ -80,18 +89,89 @@ section.testimonial .card{
     border-radius: 5px;
 
     padding: 25px;
-    margin: 25px 0;
 
     line-height: 25px;
 }
 
-section.testimonial .card h4{
+section.testimonial .card div{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "img name"
+                         "img title"
+    ;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 25px 25px;
+}
+
+section.testimonial .card div img{
+    grid-area: img;
+}
+
+section.testimonial .card div h3{
+    grid-area: name;
+}
+
+section.testimonial .card div h4{
+    grid-area: title;
+
+    font-size: 12px;
     font-weight: 100;
 }
 
-section.testimonial .card :not(p){
-    display: inline-block;
-    letter-spacing: 1px;
+section.testimonial .card img{
+    width: 50px;
+    border-radius: 50%;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+}
+
+div.form-card{
+    background-color: var(--dark-blue-intro-email-);
+    padding: 20px;
+    
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    border-radius: 10px;
+   
+    z-index: 10;
+    box-shadow: 5px 5px 10px black;
+
+    position: relative;
+
+    top: -445px;
+    left: -12px;
+}
+
+div.form-card > *{
+    margin: 10px 0;
+}
+
+div.form-card h1{
+    font-size: 24px;
+}
+
+div.form-card p{
+    font-weight: 100;
+}
+
+div.form-card input[type="text"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 24px;
+
+    border: none;
+    outline: none;
+
+    text-indent: 10%;
+}
+
+div.form-card button{
+    width: 100%;
 }
 
 @media (min-width: 768px){
@@ -114,7 +194,8 @@ section.testimonial .card :not(p){
     }
 
     section.fill-content{
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
     }
 
     section.fill-content div{
@@ -123,6 +204,35 @@ section.testimonial .card :not(p){
 
     section.fill-content img{
         width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+    section.testimonial{
+        grid-template-columns: 0 1fr 1fr 1fr;
+    }
+
+    section.testimonial #quote{
+        width: 50px;
+        bottom: 25px;
+    }
+    
+    div.form-card{
+        width: 60%;
+        padding: 20px 50px;
+        top: -370px;
+    }
+
+    div.form-card input[type="text"]{
+        display: inline;
+        width: 60%;
+        margin: 10px 10px;
+    }
+    
+    div.form-card button{
+        display: inline;
+        width: 30%;
+        margin: 10px 10px;
     }
 }
 
@@ -138,5 +248,10 @@ section.testimonial .card :not(p){
     section.features > * {
         padding: 25px 75px;
     }
+
+    div.form-card{
+        left: 150px;
+    }
+
 }
 
